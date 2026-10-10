@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="05 Scotch Bonnet">
+  <rect width="400" height="400" fill="#F7F2FF"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="180" font-weight="700" fill="#4B2A7B">05</text>
+  <g transform="translate(140,250)">
+    <path d="M20 50c-8-18 6-34 24-28 10 3 16 14 14 26-8 4-20 6-38 2z" fill="#C62828"/>
+    <path d="M70 55c-6-20 10-36 28-30 12 4 18 16 14 30-10 4-24 6-42 0z" fill="#A31D33"/>
+    <path d="M45 20c4-10 18-10 22 0" stroke="#2E7D32" stroke-width="3" fill="none"/>
+  </g>
+</svg>

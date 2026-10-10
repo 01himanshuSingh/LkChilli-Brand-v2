@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="04 Habanero">
+  <rect width="400" height="400" fill="#FFF4EC"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="180" font-weight="700" fill="#E8672A">04</text>
+  <g transform="translate(130,255)">
+    <ellipse cx="30" cy="35" rx="22" ry="18" fill="#F57C00"/>
+    <ellipse cx="75" cy="40" rx="24" ry="20" fill="#E8672A"/>
+    <ellipse cx="120" cy="32" rx="20" ry="16" fill="#EF6C00"/>
+  </g>
+</svg>

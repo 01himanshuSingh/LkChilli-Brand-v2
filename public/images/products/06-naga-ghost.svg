@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="06 Naga Ghost">
+  <rect width="400" height="400" fill="#F8F0F1"/>
+  <text x="200" y="230" text-anchor="middle" font-family="Georgia, serif" font-size="180" font-weight="700" fill="#7A1A2B">06</text>
+  <g transform="translate(135,245)">
+    <ellipse cx="35" cy="45" rx="16" ry="40" fill="#7A1A2B" transform="rotate(-12 35 45)"/>
+    <ellipse cx="75" cy="42" rx="16" ry="42" fill="#A31D33"/>
+    <ellipse cx="110" cy="48" rx="14" ry="36" fill="#8B1E2D" transform="rotate(14 110 48)"/>
+  </g>
+</svg>

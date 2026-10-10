@@ -1,0 +1,78 @@
+import type { Product } from "@/types/product";
+
+export const products: Product[] = [
+  {
+    id: "ancho",
+    number: "01",
+    name: "ANCHO",
+    tagline: "The Smoky Sophistication",
+    description:
+      "Your entry point to the adventure. This is a pleasant, smoky warmth that acts as a tingle rather than a burn.",
+    caption: "Box of 30 | 10 ml each",
+    accent: "ancho",
+    imageSrc: "/images/products/01_chilli.png",
+    imageAlt: "LK Chilli Ancho oil bottle resting on dried chillies",
+  },
+  {
+    id: "cayenne",
+    number: "02",
+    name: "CAYENNE",
+    tagline: "The Sharp Classic",
+    description:
+      "A step up in energy. Cayenne provides a clean, sharp, and biting heat that hits the palate quickly and departs just as elegantly.",
+    caption: "Box of 30 | 10 ml each",
+    accent: "cayenne",
+    imageSrc: "/images/products/02_chilli.png",
+    imageAlt: "Cayenne chilli illustration with number 02",
+  },
+  {
+    id: "birdseye",
+    number: "03",
+    name: "BIRDSEYE",
+    tagline: "The Aromatic Spark",
+    description:
+      "A high-impact, vibrant heat characterized by a distinct fruity aroma. It's quick, punchy, and full of energy.",
+    caption: "Box of 30 | 10 ml each",
+    accent: "birdseye",
+    imageSrc: "/images/products/03_chilli.png",
+    imageAlt: "Birdseye chilli illustration with number 03",
+  },
+  {
+    id: "habanero",
+    number: "04",
+    name: "HABANERO",
+    tagline: "The Tropical Surge",
+    description:
+      "Expect intense heat coupled with floral, tropical notes that provide a 'bright' spice.",
+    caption: "Box of 30 | 10 ml each",
+    accent: "habanero",
+    imageSrc: "/images/products/04_chilli.png",
+    imageAlt: "Habanero chilli illustration with number 04",
+  },
+  {
+    id: "scotch-bonnet",
+    number: "05",
+    name: "SCOTCH BONNET",
+    tagline: "The Floral Powerhouse",
+    description:
+      "Deep complexity meets extreme heat. Its sweet-spicy aroma is legendary with volatile floral notes.",
+    caption: "Box of 30 | 10 ml each",
+    accent: "scotch-bonnet",
+    imageSrc: "/images/products/05_chilli.png",
+    imageAlt: "Scotch Bonnet chilli illustration with number 05",
+  },
+  {
+    id: "naga-ghost",
+    number: "06",
+    name: "NAGA GHOST",
+    tagline: "The Legendary Intensity",
+    description:
+      "Our most formidable offering. It features an earthy, smoky base that hides a formidable, lingering heat that builds with every second.",
+    caption: "Box of 30 | 10 ml each",
+    accent: "naga-ghost",
+    imageSrc: "/images/products/06_chilli.png",
+    imageAlt: "Naga Ghost chilli illustration with number 06",
+  },
+];
+
+export const assortedPackId = "assorted-pack";

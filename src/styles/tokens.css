@@ -1,0 +1,15 @@
+/* Design tokens mirrored in tailwind.config.ts — kept for documentation / non-TW usage */
+:root {
+  --brand-red: #a31d33;
+  --brand-red-dark: #8a1829;
+  --text-body: #333333;
+  --text-heading: #111111;
+  --eco-green: #1e7a5c;
+  --product-ancho: #1f6b4f;
+  --product-cayenne: #e0a82e;
+  --product-birdseye: #a31d33;
+  --product-habanero: #e8672a;
+  --product-scotch-bonnet: #4b2a7b;
+  --product-naga-ghost: #7a1a2b;
+  --container-max: 1200px;
+}
