@@ -14,8 +14,8 @@ const footerHeadingClass =
 export function Footer() {
   return (
     <footer className="bg-brand-red text-white">
-      <Container className="flex flex-col items-center gap-10 py-12 text-center sm:py-14 md:flex-row md:items-start md:justify-between md:gap-8 md:py-16 md:text-left lg:gap-10 lg:py-[4.5rem] xl:py-20">
-        <div className="flex shrink-0 justify-center md:justify-start">
+      <Container className="flex flex-col items-start gap-8 py-12 text-left sm:gap-10 sm:py-14 md:flex-row md:justify-between md:gap-8 md:py-16 lg:gap-10 lg:py-[4.5rem] xl:py-20">
+        <div className="flex w-full shrink-0 justify-start md:w-auto">
           <Image
             src="/images/footer_logo.png"
             alt="LK Chilli"
@@ -25,7 +25,7 @@ export function Footer() {
           />
         </div>
 
-        <div className="min-w-[10rem]">
+        <div className="w-full min-w-0 md:w-auto md:min-w-[10rem]">
           <h2 className={footerHeadingClass}>Contact Us</h2>
           <ul className="space-y-2.5 lg:space-y-3">
             {footerContact.map((item) => (
@@ -38,7 +38,7 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="min-w-[8rem]">
+        <div className="w-full min-w-0 md:w-auto md:min-w-[8rem]">
           <h2 className={footerHeadingClass}>{footerPages.title}</h2>
           <ul className="space-y-2.5 lg:space-y-3">
             {footerPages.links.map((link) => (
@@ -52,7 +52,7 @@ export function Footer() {
         </div>
 
         <SocialIcons
-          className="md:pt-1"
+          className="justify-start md:pt-1"
           iconClassName="h-[18px] w-[18px] xl:h-5 xl:w-5 2xl:h-6 2xl:w-6"
         />
       </Container>

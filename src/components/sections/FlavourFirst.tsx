@@ -6,7 +6,7 @@ export function FlavourFirst() {
   return (
     <section
       id="story"
-      className="bg-white py-12 sm:py-18 lg:py-22"
+      className="bg-white py-12 sm:py-15 lg:py-15 2xl:py-20" 
       aria-labelledby="flavour-first"
     >
       <Container>

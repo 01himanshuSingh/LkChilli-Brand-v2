@@ -12,7 +12,7 @@ function handleAddToCart(productId: string): void {
 
 export function AssortedPack() {
   return (
-    <section className="bg-white py-10 sm:py-12" aria-labelledby="assorted-pack">
+    <section className="bg-white py-10 " aria-labelledby="assorted-pack">
       <Container>
         <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-12 lg:gap-0">
           {/* Left matches right image height (items-stretch + flex-1 card) */}
