@@ -5,19 +5,26 @@ export const primaryNav: NavLink[] = [
   { label: "STORY", href: "#story" },
 ];
 
-export const secondaryNav: NavLink[] = [
-  { label: "NEWS", href: "#news" },
-];
+export const secondaryNav: NavLink[] = [{ label: "NEWS", href: "#news" }];
 
-export const socialLinks = [
+export type SocialIcon = "instagram" | "facebook";
+
+export interface SocialLink {
+  label: string;
+  icon: SocialIcon;
+  /** Omit or null = static icon (not clickable) */
+  href?: string | null;
+}
+
+export const socialLinks: SocialLink[] = [
   {
     label: "Instagram",
-    href: "https://instagram.com",
-    icon: "instagram" as const,
+    href: "https://www.instagram.com/lkchilli/?hl=en",
+    icon: "instagram",
   },
   {
     label: "Facebook",
-    href: "https://facebook.com",
-    icon: "facebook" as const,
+    href: null,
+    icon: "facebook",
   },
 ];

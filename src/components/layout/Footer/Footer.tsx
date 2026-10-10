@@ -1,9 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Container } from "@/components/ui/Container";
-import { FacebookIcon, InstagramIcon } from "@/components/ui/Icons";
+import { SocialIcons } from "@/components/ui/SocialIcons";
 import { footerContact, footerPages } from "@/data/footer";
-import { socialLinks } from "@/data/navigation";
 
 /** Match header nav type scale */
 const footerLinkClass =
@@ -52,30 +51,10 @@ export function Footer() {
           </ul>
         </div>
 
-        <div className="flex items-center gap-3 md:pt-1 xl:gap-3.5">
-          {socialLinks.map((social) => (
-            <a
-              key={social.label}
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label={social.label}
-              className="transition-opacity hover:opacity-80"
-            >
-              {social.icon === "instagram" ? (
-                <InstagramIcon
-                  className="h-[18px] w-[18px] xl:h-5 xl:w-5 2xl:h-6 2xl:w-6"
-                  size={20}
-                />
-              ) : (
-                <FacebookIcon
-                  className="h-[18px] w-[18px] xl:h-5 xl:w-5 2xl:h-6 2xl:w-6"
-                  size={20}
-                />
-              )}
-            </a>
-          ))}
-        </div>
+        <SocialIcons
+          className="md:pt-1"
+          iconClassName="h-[18px] w-[18px] xl:h-5 xl:w-5 2xl:h-6 2xl:w-6"
+        />
       </Container>
     </footer>
   );

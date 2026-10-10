@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useEffect, useRef } from "react";
-import { CloseIcon, FacebookIcon, InstagramIcon } from "@/components/ui/Icons";
-import { primaryNav, secondaryNav, socialLinks } from "@/data/navigation";
+import { CloseIcon } from "@/components/ui/Icons";
+import { SocialIcons } from "@/components/ui/SocialIcons";
+import { primaryNav, secondaryNav } from "@/data/navigation";
 import { useScrollLock } from "@/hooks/useScrollLock";
 
 export interface MobileMenuProps {
@@ -64,19 +65,8 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
         ))}
       </nav>
 
-      <div className="mt-auto flex items-center gap-4 border-t border-white/30 pt-6 pb-[env(safe-area-inset-bottom)]">
-        {socialLinks.map((social) => (
-          <a
-            key={social.label}
-            href={social.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={social.label}
-            className="transition-opacity hover:opacity-80"
-          >
-            {social.icon === "instagram" ? <InstagramIcon /> : <FacebookIcon />}
-          </a>
-        ))}
+      <div className="mt-auto border-t border-white/30 pt-6 pb-[env(safe-area-inset-bottom)]">
+        <SocialIcons className="gap-4" />
       </div>
     </div>
   );

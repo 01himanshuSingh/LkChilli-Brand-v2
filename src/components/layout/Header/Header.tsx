@@ -4,9 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Container } from "@/components/ui/Container";
-import { FacebookIcon, InstagramIcon, MenuIcon } from "@/components/ui/Icons";
+import { MenuIcon } from "@/components/ui/Icons";
+import { SocialIcons } from "@/components/ui/SocialIcons";
 import { MobileMenu } from "@/components/layout/Header/MobileMenu";
-import { primaryNav, secondaryNav, socialLinks } from "@/data/navigation";
+import { primaryNav, secondaryNav } from "@/data/navigation";
 import { useSmartHeader } from "@/hooks/useSmartHeader";
 import { cn } from "@/lib/cn";
 
@@ -99,30 +100,7 @@ export function Header() {
                 |
               </span>
             </nav>
-            <div className="flex items-center gap-3 xl:gap-3.5">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="transition-opacity hover:opacity-80"
-                >
-                  {social.icon === "instagram" ? (
-                    <InstagramIcon
-                      className="h-[18px] w-[18px] xl:h-5 xl:w-5 2xl:h-6 2xl:w-6"
-                      size={20}
-                    />
-                  ) : (
-                    <FacebookIcon
-                      className="h-[18px] w-[18px] xl:h-5 xl:w-5 2xl:h-6 2xl:w-6"
-                      size={20}
-                    />
-                  )}
-                </a>
-              ))}
-            </div>
+            <SocialIcons iconClassName="h-[18px] w-[18px] xl:h-5 xl:w-5 2xl:h-6 2xl:w-6" />
           </div>
 
           <div className="w-8 sm:w-9 lg:hidden" aria-hidden="true" />
