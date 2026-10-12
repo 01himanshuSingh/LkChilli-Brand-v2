@@ -5,7 +5,7 @@ export const primaryNav: NavLink[] = [
   { label: "STORY", href: "/about" },
 ];
 
-export const secondaryNav: NavLink[] = [{ label: "NEWS", href: "/#news" }];
+export const secondaryNav: NavLink[] = [{ label: "CONTACT", href: "/contact" }];
 
 export type SocialIcon = "instagram" | "facebook";
 

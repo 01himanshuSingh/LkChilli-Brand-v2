@@ -12,5 +12,6 @@ export const footerPages: FooterColumn = {
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
     { label: "Shop", href: "/#shop" },
+    { label: "Contact", href: "/contact" },
   ],
 };

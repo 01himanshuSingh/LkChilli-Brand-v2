@@ -1,8 +1,5 @@
-"use client";
-
 import Image from "next/image";
 import type { Product } from "@/types/product";
-import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 
 const accentText: Record<Product["accent"], string> = {
@@ -16,10 +13,9 @@ const accentText: Record<Product["accent"], string> = {
 
 export interface ProductCardProps {
   product: Product;
-  onAddToCart: (productId: string) => void;
 }
 
-export function ProductCard({ product, onAddToCart }: ProductCardProps) {
+export function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="mx-auto flex w-full max-w-full flex-col items-center text-center">
       <div className="relative mb-5 aspect-square w-full overflow-hidden">
@@ -54,16 +50,9 @@ export function ProductCard({ product, onAddToCart }: ProductCardProps) {
         {product.description}
       </p>
 
-      <p className="mb-5 font-sans text-caption text-text-muted text-[10px] lg:text-[12px] 2xl:text-[14px]  ">{product.caption}</p>
-
-      <Button
-        variant="outline"
-        size="slim"
-        onClick={() => onAddToCart(product.id)}
-        aria-label={`Add ${product.name} to cart`}
-      >
-        Add to Cart
-      </Button>
+      <p className="font-sans text-caption text-text-muted text-[10px] lg:text-[12px] 2xl:text-[14px]">
+        {product.caption}
+      </p>
     </article>
   );
 }

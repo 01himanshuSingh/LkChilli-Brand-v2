@@ -94,7 +94,6 @@ export function VideoHero({
         className="absolute inset-0 h-full w-full object-cover"
         poster={poster}
         muted
-        defaultMuted
         playsInline
         loop
         autoPlay={!reducedMotion}
