@@ -29,6 +29,12 @@ const config: Config = {
         eco: {
           green: "#1E7A5C",
         },
+        forest: {
+          dark: "#12241D",
+        },
+        heading: {
+          green: "#1E4D3C",
+        },
         surface: {
           soft: "#F5F5F5",
           divider: "#B8D4E8",
@@ -65,6 +71,7 @@ const config: Config = {
       },
       maxWidth: {
         container: "1200px",
+        about: "1080px",
       },
       spacing: {
         18: "4.5rem",
@@ -73,6 +80,7 @@ const config: Config = {
       },
       boxShadow: {
         pack: "0 12px 40px rgba(0, 0, 0, 0.12)",
+        portrait: "0 8px 28px rgba(0, 0, 0, 0.12)",
       },
       transitionDuration: {
         DEFAULT: "250ms",

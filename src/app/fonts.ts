@@ -10,7 +10,7 @@ export const serif = EB_Garamond({
 
 export const sans = Inter({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["300", "400", "500"],
   variable: "--font-sans",
   display: "swap",
 });

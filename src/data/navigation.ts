@@ -1,11 +1,11 @@
 import type { NavLink } from "@/types/nav";
 
 export const primaryNav: NavLink[] = [
-  { label: "SHOP", href: "#shop" },
-  { label: "STORY", href: "#story" },
+  { label: "SHOP", href: "/#shop" },
+  { label: "STORY", href: "/about" },
 ];
 
-export const secondaryNav: NavLink[] = [{ label: "NEWS", href: "#news" }];
+export const secondaryNav: NavLink[] = [{ label: "NEWS", href: "/#news" }];
 
 export type SocialIcon = "instagram" | "facebook";
 

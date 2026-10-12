@@ -16,17 +16,7 @@ export function AssortedPack() {
       <Container>
         <div className="grid grid-cols-1 items-stretch gap-6 lg:grid-cols-12 lg:gap-0">
           {/* Left matches right image height (items-stretch + flex-1 card) */}
-          <div className="order-2 flex h-full flex-col gap-4 lg:order-1 lg:col-span-5 lg:z-10 xl:col-span-4">
-            <div className="shrink-0">
-              <Button
-                variant="solid"
-                size="slim"
-                onClick={() => console.log("[nav] view all products")}
-              >
-                View All Products
-              </Button>
-            </div>
-
+          <div className="order-2 flex h-full flex-col lg:order-1 lg:col-span-5 lg:z-10 xl:col-span-4">
             <div className="flex flex-1 flex-col justify-center bg-brand-red px-8 py-10 text-white sm:px-10 sm:py-12 lg:px-10 lg:py-12 xl:px-12">
               <h2
                 id="assorted-pack"

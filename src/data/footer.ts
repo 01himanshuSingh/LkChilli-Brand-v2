@@ -9,8 +9,8 @@ export const footerContact: FooterContactItem[] = [
 export const footerPages: FooterColumn = {
   title: "Just to Page",
   links: [
-    { label: "Home", href: "#" },
-    { label: "About", href: "#story" },
-    { label: "Shop", href: "#shop" },
+    { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
+    { label: "Shop", href: "/#shop" },
   ],
 };
