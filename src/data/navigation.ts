@@ -2,7 +2,7 @@ import type { NavLink } from "@/types/nav";
 
 export const primaryNav: NavLink[] = [
   { label: "SHOP", href: "/#shop" },
-  { label: "STORY", href: "/about" },
+  { label: "ABOUT", href: "/about" },
 ];
 
 export const secondaryNav: NavLink[] = [{ label: "CONTACT", href: "/contact" }];
