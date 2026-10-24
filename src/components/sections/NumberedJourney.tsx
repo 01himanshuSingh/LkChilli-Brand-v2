@@ -1,15 +1,17 @@
 import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
 
 export function NumberedJourney() {
   return (
-    <section className="bg-white py-14 sm:py-16 lg:py-15" aria-labelledby="numbered-journey">
+    <section className="bg-white py-16 sm:py-20 lg:py-28" aria-labelledby="just-drip-it">
       <Container className="max-w-3xl text-center">
-        <SectionHeading id="numbered-journey" as="h1">
-          A Numbered Journey
-        </SectionHeading>
+        <h2
+          id="just-drip-it"
+          className="font-serif text-[clamp(2rem,3.2vw,2.75rem)] font-medium italic leading-none text-brand-red"
+        >
+          Just Drip It
+        </h2>
 
-        <p className="mt-6 font-serif text-[clamp(0.95rem,1.4vw,1.125rem)] lg:text-[20px] 2xl:text-[24px] italic leading-relaxed text-brand-red text-balance font-medium lg:w-[690px] lg:mx-auto">
+        <p className="mx-auto mt-7 max-w-[40rem] text-balance font-serif text-[clamp(1.05rem,1.45vw,1.375rem)] font-medium italic leading-relaxed text-brand-red lg:mt-8">
           From the gentle, smoky hum to the legendary fire chillies, we have captured each
           individual chilli in its most authentic, oil-infused form.
           <br />

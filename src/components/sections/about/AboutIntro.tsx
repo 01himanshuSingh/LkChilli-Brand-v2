@@ -3,7 +3,7 @@ import { aboutIntro } from "@/data/about";
 
 export function AboutIntro() {
   return (
-    <section className="bg-white py-14 sm:py-18 lg:py-22" aria-labelledby="about-intro">
+    <section className="bg-white pt-14 sm:pt-18 lg:pt-22" aria-labelledby="about-intro">
       <Container className="max-w-3xl text-center">
         <h1
           id="about-intro"
@@ -11,9 +11,15 @@ export function AboutIntro() {
         >
           {aboutIntro.title}
         </h1>
-        <p className="mt-4 font-sans text-[13px] lg:text-[20px]  2xl:text-[24px] font-normal uppercase tracking-[0.06em] text-brand-red sm:tracking-[0.08em]">
+        <p className="mt-4 font-sans text-[13px] font-normal uppercase tracking-[0.06em] text-brand-red sm:tracking-[0.08em] lg:text-[20px] 2xl:text-[24px]">
           {aboutIntro.subtitle}
         </p>
+      </Container>
+
+      <Container className="mt-8 max-w-about pb-10 sm:mt-10 sm:pb-12 lg:mt-12 lg:pb-14">
+        <div aria-hidden className="border-t border-brand-red pt-1.5">
+          <div className="border-t border-brand-red" />
+        </div>
       </Container>
     </section>
   );

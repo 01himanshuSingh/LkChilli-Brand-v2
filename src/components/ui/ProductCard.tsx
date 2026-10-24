@@ -46,12 +46,16 @@ export function ProductCard({ product }: ProductCardProps) {
         {product.tagline}
       </p>
 
-      <p className="mb-3 w-full lg:max-w-[280px] 2xl:max-w-[320px] text-[12px] lg:text-[14px] 2xl:text-[16px] font-sans text-body text-text-body">
-        {product.description}
+      <p className="mb-3 w-full font-sans text-[13px] leading-[1.45] text-text-body">
+        {product.description.map((line) => (
+          <span key={line} className="block">
+            {line}
+          </span>
+        ))}
       </p>
 
       <p className="font-sans text-caption text-text-muted text-[10px] lg:text-[12px] 2xl:text-[14px]">
-        {product.caption}
+        {/* {product.caption} */}
       </p>
     </article>
   );

@@ -58,7 +58,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
             key={link.href}
             href={link.href}
             onClick={onClose}
-            className="font-sans text-base uppercase tracking-[0.12em] transition-opacity hover:opacity-80"
+            className="font-serif text-base font-normal uppercase tracking-[0.22em] transition-opacity hover:opacity-80"
           >
             {link.label}
           </Link>

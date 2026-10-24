@@ -2,6 +2,14 @@ export interface AboutParagraphBlock {
   paragraphs: string[];
 }
 
+export interface CopyRun {
+  text: string;
+  emphasis?: boolean;
+}
+
+/** One visual line. A line may mix regular and bold runs. */
+export type CopyLine = readonly CopyRun[];
+
 export interface StatColumn {
   /** Single-line title used on mobile */
   title: string;

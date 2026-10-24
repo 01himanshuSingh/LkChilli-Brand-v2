@@ -11,7 +11,8 @@ export interface Product {
   number: string;
   name: string;
   tagline: string;
-  description: string;
+  /** Designed line breaks, in order. Each entry is one centered line. */
+  description: readonly string[];
   caption: string;
   accent: ProductAccent;
   imageSrc: string;

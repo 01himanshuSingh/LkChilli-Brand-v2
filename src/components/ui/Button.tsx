@@ -5,7 +5,7 @@ import type { ButtonHTMLAttributes, ReactNode } from "react";
 import { cn } from "@/lib/cn";
 
 type ButtonVariant = "outline" | "solid" | "outline-light";
-type ButtonSize = "default" | "slim";
+type ButtonSize = "default" | "slim" | "label";
 
 const variantClasses: Record<ButtonVariant, string> = {
   outline:
@@ -19,6 +19,7 @@ const variantClasses: Record<ButtonVariant, string> = {
 const sizeClasses: Record<ButtonSize, string> = {
   default: "px-6 py-2.5 text-button",
   slim: "px-5 py-1.5 text-[1rem] tracking-[0.1em]",
+  label: "px-10 py-[0.55rem] text-[0.8125rem] font-normal leading-none tracking-[0.32em]",
 };
 
 const baseClasses =

@@ -24,9 +24,7 @@ export default function HomePage() {
         <ProductGrid />
       </Reveal>
 
-      <Reveal delay="short">
-        <AssortedPack />
-      </Reveal>
+     
 
       <Reveal delay="short">
         <FlavourFirst />

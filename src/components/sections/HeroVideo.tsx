@@ -1,10 +1,17 @@
 import { VideoHero } from "@/components/ui/VideoHero";
 
+/** Cloudinary assets behind the homepage player embeds. */
+const desktopHeroSrc =
+  "https://res.cloudinary.com/dafbio15x/video/upload/LK_Home_Page_Cover_V.2.2_thcz2f.mp4";
+const mobileHeroSrc =
+  "https://res.cloudinary.com/dafbio15x/video/upload/LK_Homepage_Cover_Mobile_V.2_hvtsxa.mp4";
+
 /** Landing-page hero — full viewport with brand tagline */
 export function HeroVideo() {
   return (
     <VideoHero
-      src="/videos/hero.mp4"
+      src={desktopHeroSrc}
+      mobileSrc={mobileHeroSrc}
       poster="/images/hero-poster.jpg"
       alt="Chef pouring LK Chilli oil onto tasting spoons"
       priority

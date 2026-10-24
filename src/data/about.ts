@@ -1,4 +1,4 @@
-import type { AwardBadgeItem, MonodoseColumn, StatColumn } from "@/types/about";
+import type { AwardBadgeItem, CopyLine, MonodoseColumn, StatColumn } from "@/types/about";
 
 export const aboutIntro = {
   title: "A Legacy in Every Drop",
@@ -11,10 +11,39 @@ export const founderContent = {
   imageSrc: "/images/about/Founder_pic.webp",
   imageAlt: "Lalit Modi in a kitchen with green cabinets",
   paragraphs: [
-    'The story of this brand begins long before the first olive was pressed. It is rooted in the formidable legacy of Modi Global (Modi Enterprises), a conglomerate built on the philosophy of "Collaborate. Innovate. Evolve." For generations, the Modi family has been at the forefront of industrial pioneering.',
-    "While our founder, is widely recognised for his transformative impact on global sport with the IPL and the success of Modicare, this project is a return to core roots at Modi Global. It is the culmination of his lifelong journey as a global explorer and his obsession with the vibrant world of spice.",
-    "Driven by the heritage of bringing together only the world's best, he sought to bridge the gap between high-end luxury and everyday culinary adventure. We are serious about our history, but we believe the best way to honour it is through products that make life more vibrant.",
-  ],
+    [
+      [{ text: "The story of this brand begins long before the first olive was" }],
+      [{ text: "pressed. It is rooted in the formidable legacy of Modi Global" }],
+      [{ text: "(Modi Enterprises), a conglomerate built on the philosophy" }],
+      [
+        { text: "of " },
+        { text: "“Collaborate. Innovate. Evolve.”", emphasis: true },
+        { text: " For generations, the" },
+      ],
+      [{ text: "Modi family has been at the forefront of industrial pioneering." }],
+    ],
+    [
+      [{ text: "While our founder, is widely recognised for his transformative" }],
+      [{ text: "impact on global sport with the Indian Premier League and" }],
+      [{ text: "the success of Modicare, this project is a return to his core" }],
+      [{ text: "roots at Modi Global. It is the culmination of his lifelong" }],
+      [{ text: "journey as a global explorer and his obsession with the" }],
+      [{ text: "vibrant world of spice." }],
+    ],
+    [
+      [
+        { text: "Driven by the heritage of " },
+        { text: "bringing together only the", emphasis: true },
+      ],
+      [
+        { text: "world’s best,", emphasis: true },
+        { text: " he sought to bridge the gap between high-end" },
+      ],
+      [{ text: "luxury and everyday culinary adventure. We are serious" }],
+      [{ text: "about our history, but we believe the best way to honour it is" }],
+      [{ text: "through products that make life more vibrant." }],
+    ],
+  ] satisfies readonly (readonly CopyLine[])[],
 } as const;
 
 export const partnersContent = {
@@ -68,7 +97,7 @@ export const monodoseHero = {
 } as const;
 
 export const castelloLogo = {
-  imageSrc: "/images/about/castello_Logo.avif",
+  imageSrc: "/images/about/castello_Logo.png",
   imageAlt: "Castello Monte Vibiano – Umbria",
 } as const;
 
@@ -114,6 +143,9 @@ export const monodoseColumns: MonodoseColumn[] = [
 
 export const aboutHero = {
   poster: "/images/about/hero-poster.jpg",
-  videoSrc: "/images/about/Lk_AboutUs.mp4",
-  alt: "Three men conversing on a sofa in a warm-lit room",
+  videoSrc:
+    "https://res.cloudinary.com/dafbio15x/video/upload/About_Us_Cover_Desktop_qnexr8.mp4",
+  mobileVideoSrc:
+    "https://res.cloudinary.com/dafbio15x/video/upload/About_Us_Cover_Mobile_cecro4.mp4",
+  alt: "LK Chilli About Us",
 } as const;

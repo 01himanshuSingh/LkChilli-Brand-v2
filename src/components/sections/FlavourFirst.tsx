@@ -10,6 +10,11 @@ export function FlavourFirst() {
       aria-labelledby="flavour-first"
     >
       <Container>
+        <div aria-hidden className="mb-10 flex flex-col gap-1.5 sm:mb-12 lg:mb-14">
+          <span className="block h-px w-full bg-brand-red" />
+          <span className="block h-px w-full bg-brand-red" />
+        </div>
+
         <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-14">
           <div className="relative aspect-[4/5] w-full overflow-hidden sm:aspect-[5/6] lg:max-h-[34rem]">
             <Image
@@ -34,7 +39,7 @@ export function FlavourFirst() {
               never designed to mask the integrity of your dish or overwhelm your palate
               with fire; they are designed to make the flavours you love speak louder.
             </p>
-            <Button href="#news" variant="outline">
+            <Button href="#news" variant="outline" size="label">
               Read More
             </Button>
           </div>

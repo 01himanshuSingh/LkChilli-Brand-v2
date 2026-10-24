@@ -12,7 +12,9 @@ import { useSmartHeader } from "@/hooks/useSmartHeader";
 import { cn } from "@/lib/cn";
 
 const navLinkClass =
-  "font-sans text-[0.75rem] uppercase tracking-[0.12em] transition-opacity hover:opacity-80 lg:text-[0.8125rem] xl:text-[0.875rem] 2xl:text-[0.9375rem]";
+  "font-serif text-[0.8125rem] font-normal uppercase tracking-[0.22em] transition-opacity hover:opacity-80 lg:text-sm xl:text-[0.9375rem]";
+
+const navDividerClass = "font-serif text-[0.8125rem] font-light leading-none xl:text-sm";
 
 const headerBarClass =
   "relative flex h-[4.25rem] items-center justify-between sm:h-[5rem] lg:h-[5.5rem] xl:h-[6rem]";
@@ -47,10 +49,7 @@ export function Header() {
                 className="inline-flex items-center gap-2.5 xl:gap-3"
               >
                 {index > 0 && (
-                  <span
-                    aria-hidden="true"
-                    className="text-[0.8125rem] xl:text-[0.875rem]"
-                  >
+                  <span aria-hidden="true" className={navDividerClass}>
                     |
                   </span>
                 )}
@@ -88,17 +87,12 @@ export function Header() {
 
           <div className="hidden items-center gap-3 lg:flex xl:gap-4">
             <nav className="flex items-center gap-2.5 xl:gap-3" aria-label="Secondary">
-              {secondaryNav.map((link) => (
+              {/* {secondaryNav.map((link) => (
                 <Link key={link.href} href={link.href} className={navLinkClass}>
                   {link.label}
                 </Link>
-              ))}
-              <span
-                aria-hidden="true"
-                className="text-[0.8125rem] xl:text-[0.875rem]"
-              >
-                |
-              </span>
+              ))} */}
+            
             </nav>
             <SocialIcons iconClassName="h-[18px] w-[18px] xl:h-5 xl:w-5 2xl:h-6 2xl:w-6" />
           </div>

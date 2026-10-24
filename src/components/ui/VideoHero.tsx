@@ -7,6 +7,8 @@ import { cn } from "@/lib/cn";
 
 export interface VideoHeroProps {
   src: string;
+  /** Portrait cut shown below the lg breakpoint. Desktop `src` is used from 1024px up. */
+  mobileSrc?: string;
   poster: string;
   alt: string;
   /** Extra overlay content below the play button (e.g. landing h1) */
@@ -17,6 +19,7 @@ export interface VideoHeroProps {
 
 export function VideoHero({
   src,
+  mobileSrc,
   poster,
   alt,
   children,
@@ -100,7 +103,10 @@ export function VideoHero({
         preload="metadata"
         aria-hidden="true"
       >
-        <source src={src} type="video/mp4" />
+        {mobileSrc ? (
+          <source src={src} type="video/mp4" media="(min-width: 1024px)" />
+        ) : null}
+        <source src={mobileSrc ?? src} type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-black/25" aria-hidden="true" />
@@ -115,7 +121,16 @@ export function VideoHero({
         >
           {playing ? <PauseIcon size={24} /> : <PlayIcon size={24} />}
         </button>
-        {children}
+        {children ? (
+          <div
+            className={cn(
+              "transition-opacity duration-300",
+              playing ? "pointer-events-none opacity-0" : "opacity-100",
+            )}
+          >
+            {children}
+          </div>
+        ) : null}
       </div>
     </section>
   );

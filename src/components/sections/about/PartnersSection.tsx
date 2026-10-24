@@ -13,8 +13,8 @@ export function PartnersSection() {
       imageAlt={partnersContent.imageAlt}
       className="relative z-10 bg-transparent pb-10 sm:pb-12 lg:pb-0"
       containerClassName="relative"
-      imageWrapperClassName="relative z-20 shadow-portrait lg:-mb-40 xl:-mb-48"
-      contentClassName="md:pt-2 lg:pb-32"
+      imageWrapperClassName="relative z-20 shadow-portrait lg:mt-12 lg:-mb-36 xl:mt-16 xl:-mb-44"
+      contentClassName="md:pt-2"
     >
       <p className="mb-3 font-serif text-[0.6875rem] font-medium uppercase tracking-[0.08em] text-heading-green sm:text-xs">
         {partnersContent.eyebrow}

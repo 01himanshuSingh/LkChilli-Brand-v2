@@ -10,7 +10,7 @@ export function SustainabilityBand() {
       <Container className="relative z-0 max-w-about px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:pb-24 lg:pt-20">
         <p
           id="sustainability-intro"
-          className="mb-10 font-serif text-[clamp(0.9375rem,1.5vw,1.125rem)] 2xl:text-[18px] italic leading-relaxed text-white lg:mb-14"
+          className="mb-10 max-w-xl font-serif text-[clamp(0.9375rem,1.5vw,1.125rem)] italic leading-relaxed text-white lg:mb-24 lg:max-w-[46%] 2xl:text-[18px]"
         >
           {sustainabilityIntroLines.map((line) => (
             <span key={line} className="block">

@@ -11,7 +11,7 @@ export const footerPages: FooterColumn = {
   links: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Shop", href: "/#shop" },
+    // { label: "Shop", href: "/#shop" },
     { label: "Contact", href: "/contact" },
   ],
 };

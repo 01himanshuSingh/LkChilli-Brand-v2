@@ -35,10 +35,11 @@ export default function AboutPage() {
     <div className="overflow-x-clip bg-white">
       <VideoHero
         src={aboutHero.videoSrc}
+        mobileSrc={aboutHero.mobileVideoSrc}
         poster={aboutHero.poster}
         alt={aboutHero.alt}
         priority
-        className="aspect-[2/1] min-h-[12rem] sm:min-h-[16rem]"
+        className="aspect-[9/16] max-h-[100svh] min-h-[20rem] lg:aspect-[1662/1080] lg:max-h-none lg:min-h-[16rem]"
       />
       <AboutIntro />
       <FounderSection />
@@ -50,7 +51,7 @@ export default function AboutPage() {
       <PartnerLogoAwards />
       <MonodoseHero />
       <MonodoseDetails />
-      <AssortedPack />
+      {/* <AssortedPack /> */}
     </div>
   );
 }

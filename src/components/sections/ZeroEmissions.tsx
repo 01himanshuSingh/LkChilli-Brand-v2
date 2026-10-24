@@ -9,6 +9,9 @@ export function ZeroEmissions() {
       className="bg-white pb-16 pt-4 sm:pb-20"
       aria-labelledby="zero-emissions"
     >
+      <h2 id="zero-emissions" className="sr-only">
+        Zero Compromise. Zero Emissions.
+      </h2>
       {/* Same container width as Flavour First / InfoBand / Assorted Pack */}
       <Container>
         <div className="relative aspect-[16/9] min-h-[200px] w-full overflow-hidden sm:min-h-[260px] lg:aspect-[21/9] lg:min-h-[320px]">
@@ -19,27 +22,21 @@ export function ZeroEmissions() {
             sizes="(max-width: 1200px) 100vw, 1200px"
             className="object-cover"
           />
-          <div
-            className="absolute inset-0 bg-gradient-to-b from-white/10 via-transparent to-black/10"
-            aria-hidden="true"
-          />
-          <h2
-            id="zero-emissions"
-            className="absolute left-4 top-5 max-w-[12rem] font-serif text-h2 font-bold leading-tight text-eco-green sm:left-6 sm:top-8 sm:max-w-xs lg:left-8 lg:top-10 lg:max-w-md"
-          >
-            Zero Compromise.
-            <br />
-            Zero Emissions.
-          </h2>
         </div>
 
-        <div className="mx-auto mt-8 max-w-2xl text-center">
-          <p className="mb-6 font-sans text-body leading-relaxed text-text-body text-[12px] lg:text-[14px] 2xl:text-[16px]">
-            As a world-renowned leader in the &ldquo;360 Green Revolution,&rdquo; our
-            manufacturing partner, Castello Monte Vibiano has achieved milestones that
-            redefine excellence.
+        <div className="mx-auto mt-10 max-w-3xl text-center sm:mt-12">
+          <p className="mb-8 font-sans text-[15px] font-normal leading-relaxed text-text-heading sm:text-[17px] sm:leading-[1.65]">
+            <span className="block">
+              As a world-renowned leader in the &quot;360 Green Revolution,&quot; our
+            </span>
+            <span className="block">
+              manufacturing partner,{" "}
+              <strong className="font-semibold">Castello Monte Vibiano</strong> has achieved
+              milestones
+            </span>
+            <span className="block">that redefine excellence.</span>
           </p>
-          <Button href="#story" variant="outline">
+          <Button href="#story" variant="outline" size="label">
             Read More
           </Button>
         </div>
