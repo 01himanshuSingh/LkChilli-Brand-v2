@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useEffect, useRef, useState, type ReactNode } from "react";
-import { PauseIcon, PlayIcon } from "@/components/ui/Icons";
 import { cn } from "@/lib/cn";
 
 export interface VideoHeroProps {
@@ -11,7 +10,7 @@ export interface VideoHeroProps {
   mobileSrc?: string;
   poster: string;
   alt: string;
-  /** Extra overlay content below the play button (e.g. landing h1) */
+  /** Extra overlay content (e.g. landing h1). Hidden while the video is playing. */
   children?: ReactNode;
   className?: string;
   priority?: boolean;
@@ -62,21 +61,6 @@ export function VideoHero({
       .catch(() => setPlaying(false));
   }, [reducedMotion]);
 
-  const togglePlayback = (): void => {
-    const video = videoRef.current;
-    if (!video) return;
-
-    video.muted = true;
-    video.volume = 0;
-
-    if (video.paused) {
-      void video.play().then(() => setPlaying(true)).catch(() => setPlaying(false));
-    } else {
-      video.pause();
-      setPlaying(false);
-    }
-  };
-
   return (
     <section
       className={cn("relative w-full overflow-hidden bg-black", className)}
@@ -111,16 +95,7 @@ export function VideoHero({
 
       <div className="absolute inset-0 bg-black/25" aria-hidden="true" />
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 px-4 sm:gap-5">
-        <button
-          type="button"
-          onClick={togglePlayback}
-          aria-label={playing ? "Pause video" : "Play video"}
-          aria-pressed={playing}
-          className="flex h-14 w-14 items-center justify-center rounded-full bg-black/35 text-white backdrop-blur-[1px] transition-colors duration-250 hover:bg-black/50 sm:h-16 sm:w-16 lg:h-[4.5rem] lg:w-[4.5rem]"
-        >
-          {playing ? <PauseIcon size={24} /> : <PlayIcon size={24} />}
-        </button>
+      <div className="absolute inset-0 flex flex-col items-center justify-center px-4">
         {children ? (
           <div
             className={cn(

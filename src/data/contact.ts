@@ -17,18 +17,38 @@ export const contactContent: ContactContent = {
     },
   },
   form: {
-    introText: "We’d love to hear from you. Share a few details and our team will be in touch.",
+    heading: "Get First Access",
+    introLines: ["Be the first to experience", "our products."],
     fields: [
-      { name: "name", label: "Name", type: "text", required: true },
-      { name: "email", label: "Email", type: "email", required: true },
       {
-        name: "organisation",
-        label: "Organisation",
+        name: "name",
+        label: "Name",
+        placeholder: "Name",
         type: "text",
+        required: false,
+      },
+      {
+        name: "email",
+        label: "Email",
+        placeholder: "Email*",
+        type: "email",
         required: true,
       },
-      { name: "market", label: "Market", type: "text", required: false },
-      { name: "message", label: "Message", type: "textarea", required: true },
+      {
+        name: "phone",
+        label: "Phone",
+        placeholder: "Phone*",
+        type: "tel",
+        required: true,
+      },
+      {
+        name: "message",
+        label: "Message",
+        placeholder:
+          "lorem ipsum dolor sit amet consectetur adipiscing elit eros ex laboris dolore in maxime dolor laborum",
+        type: "textarea",
+        required: false,
+      },
     ],
     submitLabel: "Submit",
     confirmationMessage:

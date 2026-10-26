@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
 export function FlavourFirst() {
@@ -33,15 +32,12 @@ export function FlavourFirst() {
             >
               &ldquo;Flavour - First&rdquo; Philosophy.
             </h2>
-            <p className="mb-8 font-sans text-body leading-relaxed text-text-body lg:max-w-md text-[12px] lg:text-[14px] 2xl:text-[16px]">
+            <p className="font-sans text-body leading-relaxed text-text-body lg:max-w-md text-[12px] lg:text-[14px] 2xl:text-[16px]">
               Our oils are precision tools crafted to elevate, enhance, and ignite the
               original notes of every meal with a sophisticated, calculated kick. They are
               never designed to mask the integrity of your dish or overwhelm your palate
               with fire; they are designed to make the flavours you love speak louder.
             </p>
-            <Button href="#news" variant="outline" size="label">
-              Read More
-            </Button>
           </div>
         </div>
       </Container>

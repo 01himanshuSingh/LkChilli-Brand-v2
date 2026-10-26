@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 
 export function ZeroEmissions() {
@@ -16,7 +15,7 @@ export function ZeroEmissions() {
       <Container>
         <div className="relative aspect-[16/9] min-h-[200px] w-full overflow-hidden sm:min-h-[260px] lg:aspect-[21/9] lg:min-h-[320px]">
           <Image
-            src="/images/Zero_Compromise.png"
+            src="/images/Zero_Compromise.JPG"
             alt="Aerial view of Castello Monte Vibiano surrounded by green hills"
             fill
             sizes="(max-width: 1200px) 100vw, 1200px"
@@ -25,7 +24,7 @@ export function ZeroEmissions() {
         </div>
 
         <div className="mx-auto mt-10 max-w-3xl text-center sm:mt-12">
-          <p className="mb-8 font-sans text-[15px] font-normal leading-relaxed text-text-heading sm:text-[17px] sm:leading-[1.65]">
+          <p className="font-sans text-[15px] font-normal leading-relaxed text-text-heading sm:text-[17px] sm:leading-[1.65]">
             <span className="block">
               As a world-renowned leader in the &quot;360 Green Revolution,&quot; our
             </span>
@@ -36,9 +35,6 @@ export function ZeroEmissions() {
             </span>
             <span className="block">that redefine excellence.</span>
           </p>
-          <Button href="#story" variant="outline" size="label">
-            Read More
-          </Button>
         </div>
       </Container>
     </section>

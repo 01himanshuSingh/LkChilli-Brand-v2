@@ -1,14 +1,10 @@
-export type ContactFormFieldName =
-  | "name"
-  | "email"
-  | "organisation"
-  | "market"
-  | "message";
+export type ContactFormFieldName = "name" | "email" | "phone" | "message";
 
 export interface ContactFormField {
   name: ContactFormFieldName;
   label: string;
-  type: "text" | "email" | "textarea";
+  placeholder: string;
+  type: "text" | "email" | "tel" | "textarea";
   required: boolean;
 }
 
@@ -23,7 +19,8 @@ export interface ContactContent {
     crest: { src: string; alt: string };
   };
   form: {
-    introText: string;
+    heading: string;
+    introLines: readonly string[];
     fields: ContactFormField[];
     submitLabel: string;
     confirmationMessage: string;

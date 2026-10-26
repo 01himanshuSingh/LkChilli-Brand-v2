@@ -1,41 +1,24 @@
 import type { Metadata } from "next";
-import { ClosingHero } from "@/components/sections/contact/ClosingHero";
 import { ContactForm } from "@/components/sections/contact/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | LK Chilli",
-  description:
-    "Contact LK Chilli — premium chilli-infused olive oil. A Modi Enterprises × Castello Monte Vibiano Partnership.",
+  description: "Be the first to experience LK Chilli products.",
   openGraph: {
     title: "Contact Us | LK Chilli",
-    description:
-      "Contact LK Chilli — premium chilli-infused olive oil. A Modi Enterprises × Castello Monte Vibiano Partnership.",
+    description: "Be the first to experience LK Chilli products.",
     type: "website",
     images: [
       {
-        url: "/images/contact-us/contact-us.jpg",
-        width: 1600,
-        height: 900,
-        alt: "LK Chilli Contact Us",
+        url: "/images/og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "LK Chilli",
       },
     ],
   },
 };
 
-/**
- * Contact Us page.
- * Mobile: form first, then photo.
- * Desktop: photo first, then form.
- */
 export default function ContactPage() {
-  return (
-    <div className="flex flex-col">
-      <div className="order-2 md:order-1">
-        <ClosingHero />
-      </div>
-      <div className="order-1 md:order-2">
-        <ContactForm />
-      </div>
-    </div>
-  );
+  return <ContactForm />;
 }

@@ -1,4 +1,4 @@
-import { Facebook, Instagram, Menu, Pause, Play, X } from "lucide-react";
+import { Facebook, Instagram, Menu, X } from "lucide-react";
 import type { SVGProps } from "react";
 import { cn } from "@/lib/cn";
 
@@ -21,14 +21,6 @@ export function MenuIcon({ className, size = 22 }: IconProps) {
 
 export function CloseIcon({ className, size = 22 }: IconProps) {
   return <X className={className} size={size} aria-hidden="true" />;
-}
-
-export function PlayIcon({ className, size = 22 }: IconProps) {
-  return <Play className={className} size={size} aria-hidden="true" fill="currentColor" />;
-}
-
-export function PauseIcon({ className, size = 22 }: IconProps) {
-  return <Pause className={className} size={size} aria-hidden="true" fill="currentColor" />;
 }
 
 export function LkMonogram({ className, ...props }: SVGProps<SVGSVGElement>) {

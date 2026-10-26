@@ -7,6 +7,8 @@ type InfoColumn = {
   body: ReactNode;
 };
 
+const emphasisClass = "font-semibold text-white";
+
 const columns: readonly InfoColumn[] = [
   {
     id: "heritage",
@@ -15,7 +17,7 @@ const columns: readonly InfoColumn[] = [
       <>
         By partnering with one of the world’s most renowned and awarded producers in the
         &quot;Green Heart&quot; of Italy, we ensure every drop is a masterpiece of{" "}
-        <strong className="font-semibold">
+        <strong className={emphasisClass}>
           heritage, DNA-certified purity, and world-class freshness.
         </strong>
       </>
@@ -27,9 +29,9 @@ const columns: readonly InfoColumn[] = [
     body: (
       <>
         The monodose packaging acts as a time capsule,{" "}
-        <strong className="font-semibold">shielding the oil from the oxidation</strong> that
+        <strong className={emphasisClass}>shielding the oil from the oxidation</strong> that
         degrades flavour and potency, ensuring you get a{" "}
-        <strong className="font-semibold">&quot;first-opening&quot; fresh</strong> pour each
+        <strong className={emphasisClass}>&quot;first-opening&quot; fresh</strong> pour each
         time.
       </>
     ),
@@ -66,7 +68,7 @@ export function InfoBand() {
                   ))}
                 </h3>
 
-                <p className="mx-auto mt-5 max-w-[22.5rem] font-sans text-[0.8125rem] leading-relaxed text-white sm:max-w-sm sm:text-sm lg:mt-6 lg:max-w-[24rem] lg:text-[0.9375rem] lg:leading-7">
+                <p className="mx-auto mt-5 max-w-[22.5rem] font-sans text-[0.8125rem] font-normal leading-relaxed text-white/70 sm:max-w-sm sm:text-sm lg:mt-6 lg:max-w-[24rem] lg:text-[0.9375rem] lg:leading-7">
                   {column.body}
                 </p>
               </article>
