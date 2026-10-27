@@ -31,8 +31,9 @@ const columns: readonly InfoColumn[] = [
         The monodose packaging acts as a time capsule,{" "}
         <strong className={emphasisClass}>shielding the oil from the oxidation</strong> that
         degrades flavour and potency, ensuring you get a{" "}
-        <strong className={emphasisClass}>&quot;first-opening&quot; fresh</strong> pour each
-        time.
+        <strong className={emphasisClass}>
+          &quot;first-opening&quot; fresh pour each time.
+        </strong>
       </>
     ),
   },

@@ -6,7 +6,7 @@ export function NumberedJourney() {
       <Container className="max-w-3xl text-center">
         <h2
           id="just-drip-it"
-          className="font-serif text-[clamp(2rem,3.2vw,2.75rem)] font-medium italic leading-none text-brand-red"
+          className="font-serif text-[clamp(2rem,3.2vw,2.75rem)] font-bold italic leading-none text-brand-red"
         >
           Just Drip It
         </h2>

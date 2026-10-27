@@ -76,12 +76,12 @@ export function Header() {
             aria-label="LK Chilli home"
           >
             <Image
-              src="/images/Logo.png"
+              src="/images/Logo-white.webp"
               alt="LK Chilli"
-              width={1075}
-              height={992}
+              width={114}
+              height={116}
               priority
-              className="h-12 w-auto object-contain sm:h-14 lg:h-16 xl:h-[4.5rem] 2xl:h-20"
+              className="h-14 w-auto object-contain sm:h-[4.25rem] lg:h-[4.75rem] xl:h-[5.25rem] 2xl:h-[5.5rem]"
             />
           </Link>
 

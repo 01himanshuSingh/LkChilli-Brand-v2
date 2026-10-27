@@ -9,7 +9,7 @@ const footerLinkClass =
   "font-sans text-[0.75rem] tracking-[0.02em] transition-opacity hover:opacity-80 hover:underline underline-offset-2 lg:text-[0.8125rem] xl:text-[0.875rem] 2xl:text-[0.9375rem]";
 
 const footerHeadingClass =
-  "mb-3 border-b border-white/80 pb-2 font-serif text-[0.8125rem] uppercase tracking-[0.08em] lg:text-[0.875rem] xl:text-[0.9375rem] 2xl:text-base";
+  "mb-3 border-b border-white/80 pb-2 font-serif text-[0.8125rem]  tracking-[0.08em] lg:text-[0.875rem] xl:text-[0.9375rem] 2xl:text-base";
 
 export function Footer() {
   return (
